@@ -22,7 +22,7 @@ Deploy this application to IBM Cloud.
    ```
    $ ibmcloud cf push --no-start
    ```
-4. Configure your Weather API key and start the application
+4. Configure your Weather API key `<YOUR_API_KEY>` and start the application
    ```
    $ ibmcloud cf set-env weather-api-nodejs WEATHER_API_KEY <YOUR_API_KEY>
    $ ibmcloud cf start weather-api-nodejs
@@ -41,7 +41,7 @@ To run this application on your local machine, install Node.js.
    ```
    $ npm install
    ```
-3. Configure your Weather API key and start the application    
+3. Configure your Weather API key `<YOUR_API_KEY>` and start the application    
    ```
    $ WEATHER_API_KEY=<YOUR_API_KEY> node app.js
    ```
