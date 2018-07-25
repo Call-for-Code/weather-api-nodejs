@@ -4,7 +4,9 @@ This project shows how to build a basic data access application that continuousl
 
 ## Get an API Key
 
-Go the the [special Call for Code Weather web site](https://callforcode.weather.com/) and [sign up](https://callforcode.weather.com/register).
+If you're participating in the 2018 Call for Code initiative, go the the [special Call for Code Weather web site](https://callforcode.weather.com/) and [sign up](https://callforcode.weather.com/register).
+
+All others, sign up for [IBM Cloud here](https://console.bluemix.net/), and provision the free [Weather Company Data plan here](https://console.bluemix.net/catalog/services/weather-company-data).  
 
 ## Getting Started in IBM Bluemix
 
