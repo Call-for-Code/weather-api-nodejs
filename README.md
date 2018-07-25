@@ -12,15 +12,37 @@ All others, sign up for [IBM Cloud here](https://console.bluemix.net/), and prov
 
 Deploy this application to IBM Cloud.
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/codait-advocates/weather-api-nodejs.git)
+1. Install and configure the [IBM Cloud Developer Tools](https://console.bluemix.net/docs/cli/index.html#overview)
+2. Clone this repository
+   ```
+   $ git clone https://github.com/codait-advocates/weather-api-nodejs.git
+   $ cd weather-api-nodejs
+   ```  
+3. Deploy the application without starting it
+   ```
+   $ ibmcloud cf push --no-start
+   ```
+4. Configure your Weather API key and start the application
+   ```
+   $ ibmcloud cf set-env weather-api-nodejs WEATHER_API_KEY <YOUR_API_KEY>
+   $ ibmcloud cf start weather-api-nodejs
+   ```
 
-## Getting Started on localhost
+## Getting Started on your local machine
 
-This application can also be run locally. Use this command:
-
-`WEATHER_API_KEY=yourkeygoeshere node app.js`
-
-
+1. Clone this repository
+   ```
+   $ git clone https://github.com/codait-advocates/weather-api-nodejs.git
+   $ cd weather-api-nodejs
+   ```  
+2. Install the dependencies
+   ```
+   $ npm install
+   ```
+3. Configure your Weather API key and start the application    
+   ```
+   $ WEATHER_API_KEY=<YOUR_API_KEY> node app.js
+   ```
 
 ## License
 
