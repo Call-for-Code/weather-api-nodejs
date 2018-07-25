@@ -30,6 +30,8 @@ Deploy this application to IBM Cloud.
 
 ## Getting Started on your local machine
 
+To run this application on your local machine, install Node.js.
+
 1. Clone this repository
    ```
    $ git clone https://github.com/codait-advocates/weather-api-nodejs.git
