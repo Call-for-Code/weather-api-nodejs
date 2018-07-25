@@ -1,0 +1,18 @@
+{
+  "name": "weather-api-nodejs",
+  "version": "0.1.0",
+  "description": "Demonstrates using the Weather Company Data for IBM Bluemix service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request": "2.87.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Call-for-Code/weather-api-nodejs.git"
+  },
+  "author": "Raj Singh <rrsingh@us.ibm.com> (http://rajsingh.org)",
+  "license": "ISC"
+}
