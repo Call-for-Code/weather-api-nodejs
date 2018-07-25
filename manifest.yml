@@ -5,7 +5,9 @@ applications:
   path: .
   memory: 256M
   instances: 1
+  no-route: true
+  health-check-type: process
   env:
+    WEATHER_API_KEY: <YOUR_API_KEY>
     NPM_CONFIG_PRODUCTION: false
   buildpack: sdk-for-nodejs
-  no-route: true
