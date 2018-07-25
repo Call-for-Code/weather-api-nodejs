@@ -1,4 +1,5 @@
 var request = require('request')
+
 const global_headlines = require('./global-weather-notification-headlines')
 const global_details = require('./weatheralertsdetail')
 const tropical_storm = require('./tropicalforecastprojectedpath')
@@ -30,12 +31,19 @@ lon = '-118.482745'
 lat = '35.843686'
 lon = '-78.78548'
 
-callGlobalWeatherNotificationHeadlines(lat, lon)
+/**
+ * Here's an example of setting up a job to look for weather 
+ * headlines every 10 minutes. You can set up as many of these 
+ * jobs as you like and query different geographies. 
+ */
+let to = 1000 * 60 * 10 // 10 minutes
+var jobtimeout = setInterval(()=>callGlobalWeatherNotificationHeadlines(lat, lon), to)
 
 function callGlobalWeatherNotificationHeadlines(lat, lon) {
   let url = HOST + global_headlines.API + baseParams
   url += '&geocode=' + lat + '%2C' + lon
   apiOptions.url = url
+  console.log(url)
   
   request(apiOptions, (error, response, body) => {
     if (!error) {
