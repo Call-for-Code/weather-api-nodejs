@@ -10,9 +10,9 @@ All others, sign up for [IBM Cloud here](https://console.bluemix.net/), and prov
 
 ## Getting Started in IBM Bluemix
 
-Deploy this application to IBM Bluemix.
+Deploy this application to IBM Cloud.
 
-<a href="https://bluemix.net/deploy?repository=https://github.com/Call-for-Code/weather-api-nodejs" target="_blank"><img src="http://bluemix.net/deploy/button.png" alt="Bluemix button" /></a>
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/codait-advocates/weather-api-nodejs.git)
 
 ## Getting Started on localhost
 
