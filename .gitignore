@@ -62,3 +62,6 @@ typings/
 
 # vscode
 .vscode/
+
+# hidden mac file
+.DS_Store

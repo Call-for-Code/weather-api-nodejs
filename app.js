@@ -3,6 +3,7 @@ const request = require('request-promise-native')
 const globalHeadlines = require('./lib/global-weather-notification-headlines')
 const globalDetails = require('./lib/weather-alerts-detail')
 const tropicalStorm = require('./lib/tropical-forecast-projected-path-source-and-basin-only')
+const dailyForecast = require('./lib/daily-forecast')
 
 const HOST = 'https://api.weather.com'
 
@@ -64,6 +65,17 @@ const callTropicalForecastProjectedPath = function (basin = 'AL', units = 'm', n
 
   request(options)
     .then(tropicalStorm.handleResponse)
+    .catch(handleFail)
+}
+
+const callDailyForecast = function (lat, lon, units = 'm') {
+  let options = defaultParams()
+  options['uri'] = `${HOST}${dailyForecast.API}`
+  options.qs['geocode'] = `${lat},${lon}`
+  options.qs['units'] = units
+
+  request(options)
+    .then(dailyForecast.handleResponse)
     .catch(handleFail)
 }
 
