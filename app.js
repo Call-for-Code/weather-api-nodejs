@@ -4,6 +4,7 @@ const globalHeadlines = require('./lib/global-weather-notification-headlines')
 const globalDetails = require('./lib/weather-alerts-detail')
 const tropicalStorm = require('./lib/tropical-forecast-projected-path-source-and-basin-only')
 const dailyForecast = require('./lib/daily-forecast')
+const severeWeatherPower = require('./lib/severe-weather-power-disruption-index')
 
 const HOST = 'https://api.weather.com'
 
@@ -76,6 +77,16 @@ const callDailyForecast = function (lat, lon, units = 'm') {
 
   request(options)
     .then(dailyForecast.handleResponse)
+    .catch(handleFail)
+}
+
+const callSevereWeatherPowerDisruption = function (lat, lon) {
+  let options = defaultParams()
+  options['uri'] = `${HOST}${severeWeatherPower.API}`
+  options.qs['geocode'] = `${lat},${lon}`
+
+  request(options)
+    .then(severeWeatherPower.handleResponse)
     .catch(handleFail)
 }
 
