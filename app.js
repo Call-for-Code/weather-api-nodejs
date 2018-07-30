@@ -106,6 +106,12 @@ lon = '-78.78548'
 // Los Angeles, CA
 lat = '34.040873'
 lon = '-118.482745'
+// New York, NY
+lat = '40.742089'
+lon = '-73.987908'
+// Jakarta, IN
+lat = '-5.7759349'
+lon = '106.1161341'
 
 /**
  * Here's an example of setting up a job to look for weather
