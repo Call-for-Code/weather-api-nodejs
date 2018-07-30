@@ -1,12 +1,12 @@
 # Weather Company Data API access for IBM Cloud
 
-This project shows how to build a basic data access application that continuously runs in the background, processing a variety of weather data from the Weather Company Data for IBM Bluemix REST API endpoints, including severe weather alerts, tropical storm forecasts, and the daily weather almanac to find conditions over time.
+This project shows how to build a basic data access application that continuously runs in the background, processing a variety of weather data from the Weather Company Data for IBM REST API endpoints, including severe weather alerts, tropical storm forecasts, and the daily weather almanac to find conditions over time.
 
 ## Obtain a Weather Company API Key
 
 If you're participating in the 2018 Call for Code initiative, go the the [special Call for Code Weather web site](https://callforcode.weather.com/) and [register](https://callforcode.weather.com/register). A time-limited API key will be sent to you via email.
 
-All others, sign up for [IBM Cloud here](https://console.bluemix.net/), and provision the free [Weather Company Data plan here](https://console.bluemix.net/catalog/services/weather-company-data).  
+All others, sign up for [IBM Cloud here](https://console.bluemix.net/), and provision the free [Weather Company Data plan here](https://console.bluemix.net/catalog/services/weather-company-data). Instead of the Call for Code documentation, [use this documentation instead](https://console.bluemix.net/docs/services/Weather/weather_rest_apis.html#rest_apis), which references slightly different versions of the APIs.
 
 ## Getting Started in IBM Cloud
 
@@ -30,7 +30,7 @@ Deploy this application to IBM Cloud.
 
 ## Getting Started on your local machine
 
-To run this application on your local machine, install Node.js.
+To run this application on your local machine, first install Node.js.
 
 1. Clone this repository
    ```
@@ -41,7 +41,7 @@ To run this application on your local machine, install Node.js.
    ```
    $ npm install
    ```
-3. Configure your Weather API key `<YOUR_API_KEY>` and start the application    
+3. Set your Weather API key `<YOUR_API_KEY>` when running the application    
    ```
    $ WEATHER_API_KEY=<YOUR_API_KEY> node app.js
    ```
