@@ -15,7 +15,7 @@ Deploy this application to IBM Cloud.
 1. Install and configure the [IBM Cloud Developer Tools](https://console.bluemix.net/docs/cli/index.html#overview)
 2. Clone this repository
    ```
-   $ git clone https://github.com/codait-advocates/weather-api-nodejs.git
+   $ git clone https://github.com/Call-for-Code/weather-api-nodejs.git
    $ cd weather-api-nodejs
    ```  
 3. Deploy the application without starting it
@@ -34,7 +34,7 @@ To run this application on your local machine, first install Node.js.
 
 1. Clone this repository
    ```
-   $ git clone https://github.com/codait-advocates/weather-api-nodejs.git
+   $ git clone https://github.com/Call-for-Code/weather-api-nodejs.git
    $ cd weather-api-nodejs
    ```  
 2. Install the dependencies
