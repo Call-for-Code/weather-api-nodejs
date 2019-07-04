@@ -12,7 +12,7 @@ All others, sign up for [IBM Cloud here](https://cloud.ibm.com/login) and provis
 
 Deploy this application to IBM Cloud.
 
-1. Install and configure the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud)
+1. Install and configure the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli)
 2. Clone this repository
    ```
    $ git clone https://github.com/Call-for-Code/weather-api-nodejs.git
